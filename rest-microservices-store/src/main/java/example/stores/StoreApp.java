@@ -26,6 +26,7 @@ import org.springframework.cloud.Cloud;
 import org.springframework.cloud.CloudFactory;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.domain.Page;
@@ -43,6 +44,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  */
 @SpringBootApplication
 @EnableDiscoveryClient
+@ComponentScan(basePackages = {"com.github.alexescg.component"})
 public class StoreApp extends RepositoryRestConfigurerAdapter {
 
     @Override

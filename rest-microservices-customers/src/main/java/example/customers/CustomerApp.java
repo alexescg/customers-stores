@@ -19,6 +19,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.rest.core.config.RepositoryRestConfiguration;
 import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapter;
 
@@ -28,6 +29,7 @@ import org.springframework.data.rest.webmvc.config.RepositoryRestConfigurerAdapt
 @SpringBootApplication
 @EnableCircuitBreaker
 @EnableDiscoveryClient
+@ComponentScan(basePackages = {"com.github.alexescg.component"})
 public class CustomerApp extends RepositoryRestConfigurerAdapter {
 
 	@Override

@@ -43,6 +43,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>com.github.alexescg</groupId>
+			<artifactId>spring-system-info</artifactId>
+			<version>a048f688c3</version>
+		</dependency>
+
 	</dependencies>
 	
 </project>
