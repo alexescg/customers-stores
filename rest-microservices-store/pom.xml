@@ -46,7 +46,7 @@
 		<dependency>
 			<groupId>com.github.alexescg</groupId>
 			<artifactId>spring-system-info</artifactId>
-			<version>a048f688c3</version>
+			<version>dde2d04e08</version>
 		</dependency>
 
 	</dependencies>
