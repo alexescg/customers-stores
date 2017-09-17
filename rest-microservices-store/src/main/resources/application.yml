@@ -27,6 +27,8 @@ eureka:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
   client:
     registryFetchIntervalSeconds: 5
+    serviceUrl:
+          defaultZone: http://192.168.1.234:8761/eureka/
 
 logging:
   level:

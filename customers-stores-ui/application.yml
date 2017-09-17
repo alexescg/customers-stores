@@ -12,6 +12,8 @@ eureka:
     leaseRenewalIntervalInSeconds: 10
   client:
     registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://192.168.1.234:8761/eureka/
 
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
 ribbon:
