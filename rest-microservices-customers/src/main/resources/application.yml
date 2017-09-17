@@ -32,6 +32,8 @@ eureka:
     registryFetchIntervalSeconds: 5
     availabilityZones: 
       default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}}
+    serviceUrl:
+        defaultZone: http://192.168.1.234:8761/eureka/
 
 # For demo only allow more hystrix connections
 hystrix:
