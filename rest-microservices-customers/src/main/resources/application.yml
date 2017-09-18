@@ -15,7 +15,7 @@ endpoints:
 
 integration:
   stores:
-    uri: http://localhost:8081
+    uri: http://192.168.1.238:8081
     test: '{cipher}316f8cdbb776c23e679bf209014788a6eab7522f48f97114328c2c9388e6b3c1'
 
 stores:
@@ -33,7 +33,7 @@ eureka:
     availabilityZones: 
       default: ${APPLICATION_DOMAIN:${DOMAIN:defaultZone}}
     serviceUrl:
-        defaultZone: http://192.168.1.234:8761/eureka/
+        defaultZone: http://138.68.242.218:8761/eureka/
 
 # For demo only allow more hystrix connections
 hystrix:

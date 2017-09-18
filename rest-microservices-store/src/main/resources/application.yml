@@ -16,7 +16,7 @@ endpoints:
 spring:
   data:
     mongodb:
-      uri: ${vcap.services.${PREFIX:}mongodb.credentials.uri:mongodb://${MONGODB_HOST:localhost}:${MONGODB_PORT:27017}/stores}
+      uri: mongodb://<user>:<pw>@ds036577.mlab.com:36577/stores
   rabbitmq:
     addresses: ${vcap.services.${PREFIX:}rabbitmq.credentials.uri:amqp://${RABBITMQ_HOST:localhost}:${RABBITMQ_PORT:5672}}
 
@@ -28,7 +28,7 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl:
-          defaultZone: http://192.168.1.234:8761/eureka/
+          defaultZone: http://138.68.242.218:8761/eureka/
 
 logging:
   level:
